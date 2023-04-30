@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.790948275862069) 52%, rgba(0,0,0,0.27586206896551724) 100%, rgba(11,213,255,0) 100%);
+    background: #000000ce;
     z-index: -2;
 }
 
