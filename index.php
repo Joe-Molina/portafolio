@@ -34,7 +34,7 @@
             <p>soy un Programador Full Stack de Venezuela, Amante de los videojuegos y la comida.Tambien disfruto desarrollar cualquier tipo de sitio o aplicacion web que mis clientes requieran.</p>
             <br>
             <div>
-                <a href="#">Contactame</a>
+                <a href="php/contacto.php">Contactame</a>
                 <a href="./assets/CurriculumProgramador.pdf" target="_blank">Descargar cv</a>
             </div>
         </section>
