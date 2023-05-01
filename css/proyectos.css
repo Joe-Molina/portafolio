@@ -11,11 +11,15 @@
     display: inline-block;
     font-size: 64px;
     font-weight: 500;
+    opacity: 0;
+    animation: aparecer 0.5s ease-in-out forwards;
 }
 
-.contenido-container p {
+.p-container {
     font-size: 20px;
     font-weight: 100;
+    opacity: 0;
+    animation: aparecer .5s ease-in-out forwards;
 }
 
 .contenido-container div {
@@ -28,12 +32,21 @@
 }
 
 .tarjeta-proyecto {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 275px;
     background: #00000054;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: aparecer ease-in-out .5s;
+    transition: .5s;
+}
+
+
+
+.tarjeta-proyecto:hover {
+    transform: scale(1.1);
 }
 
 .img-proyecto{
@@ -48,7 +61,7 @@
 }
 
 .tarjeta-proyecto p {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 100;
     margin-top: 2px;
     text-align: justify;
@@ -74,4 +87,17 @@
 
 .borde-repo {
     border-right: thin solid #fff;
+}
+
+
+
+@keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+      </ul>
+      <style>
+        #lista li {
+  opacity: 0;
+  animation: aparecer 0.5s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+      </style>
+      <script>
+var lista = document.getElementById("lista");
+var elementos = lista.getElementsByTagName("li");
+var retraso = 0;
+
+for (var i = 0; i < elementos.length; i++) {
+  elementos[i].style.animationDelay = retraso + "s";
+  retraso += 1;
+}
+      </script>
+</body>
+</html>

@@ -22,8 +22,8 @@
         <nav>
             <a href="./index.php">Inicio</a>
             <a href="./php/Proyectos.php">Proyectos</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Contacto</a>
+            <a href="./php/habilidades.php">Habilidades</a>
+            <a href="./php/contacto.php">Contacto</a>
         </nav>
     </header>
     <div class="contenido-container">
