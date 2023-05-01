@@ -1,13 +1,95 @@
 $htmlInfo = document.querySelector(".html")
 $selectimgHtml = document.querySelector(".html-select")
 $iconsSelect = document.querySelectorAll(".icons-container img")
+$selectExplicacion = document.querySelectorAll(".explicacion")
 
-console.log($iconsSelect)
-
-$cssInfo = document.querySelector(".css")
+// selectores de iconos
 $selectimgCss = document.querySelector(".css-select")
+$selectimgJs = document.querySelector(".js-select")
+$selectimgGit = document.querySelector(".git-select")
+$selectimgGithub = document.querySelector(".github-select")
+$selectimgVscode = document.querySelector(".vscode-select")
+$selectimgPhp = document.querySelector(".php-select")
+$selectimgConsola = document.querySelector(".consola-select")
+$selectimgBootstrap = document.querySelector(".bootstrap-select")
 
-   const $classVerify = $cssInfo.classList.contains("display-none");
+$selectimgHtml.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".html").classList.remove("display-none")
+});
+
+$selectimgCss.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".css").classList.remove("display-none")
+});
+
+$selectimgJs.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".js").classList.remove("display-none")
+});
+
+$selectimgGit.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".git").classList.remove("display-none")
+});
+
+$selectimgGithub.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".github").classList.remove("display-none")
+});
+
+$selectimgVscode.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".vscode").classList.remove("display-none")
+});
+
+$selectimgPhp.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".php").classList.remove("display-none")
+});
+
+$selectimgConsola.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".comand-line").classList.remove("display-none")
+});
+
+$selectimgBootstrap.addEventListener( "click", () => {
+    $selectExplicacion.forEach(el => {
+        el.classList.add("display-none")
+    })
+    document.querySelector(".bootstrap").classList.remove("display-none")
+});
+
+
+   
+   
+   /*
+   //hacer funcion que verifique si ese elemento tiene una display none
+
+   const $classVerify = () => {
+        $selectExplicacion.forEach(el => {
+            el.classList.contains("display-none");
+            
+        })
+   }
+
+   console.log($classVerify)
    
     $selectimgCss.addEventListener( "click", () => {
         if($classVerify == true){
@@ -19,15 +101,9 @@ $selectimgCss = document.querySelector(".css-select")
         }
     });
 
-    $selectimgHtml.addEventListener( "click", () => {
-        if($classVerify == true){
-        console.log("tumama")
-        $cssInfo.classList.add("display-none")
 
-        $htmlInfo.classList.remove("display-none")
 
-        }
-    });
+*/
     retraso = .3;
 
     $iconsSelect.forEach(el => {

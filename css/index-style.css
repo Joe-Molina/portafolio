@@ -53,6 +53,11 @@ header nav a {
     text-decoration: none;
     font-weight: 300;
     margin-right: 25px;
+    transition: .2s;
+}
+
+header nav a:hover {
+    color: #5aa7ff;
 }
 
 /* div contenido */
