@@ -3,18 +3,18 @@
 <h2 class="contacto-titulo">Formas de Contacto</h2>
     <section class="contacto-container">
         <article class="form-container">
-            <form action="">
+            <form action="https://formsubmit.co/joedodaniljr12345@gmail.com" method="POST">
 
                 <h2 class ="form-title">Enviame un Email</h2>
 
                 <label for="" class="label-nombre">
                     <span>Nombre:</span>
-                    <input type="text">
+                    <input type="text" name="name">
                 </label>
 
                 <label for="" class="label-email">
                     <span>Correo:</span>
-                    <input type="email">
+                    <input type="email" name="email">
                 </label>
                 
                 <span>cuales son tus necesidades?</span>
@@ -39,11 +39,10 @@
                 </div>
 
                 <label for="" class="textarea">
-                    <span>Mensaje:</span>
                     <textarea name="textArea" id="" cols="30" rows="10"></textarea>
                 </label>
 
-                <input type="submit" class="btn-enviar">
+                <input type="submit" class="btn-enviar" value="enviar">
     
             </form>
         </article>
