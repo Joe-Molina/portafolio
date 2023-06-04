@@ -78,6 +78,10 @@
     flex-grow: 1;
 }
 
+.btn-repo-demo a:hover{
+    color: aquamarine;
+}
+
 .btn-repo-demo a{
     padding: 0 10px;
     text-decoration: none;
