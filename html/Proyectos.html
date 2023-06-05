@@ -10,25 +10,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estructuraBasica.css">
-    <link rel="stylesheet" href="../css/proyectos.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/habilidades.css">
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/proyectos.css">
+    <link rel="stylesheet" href="../css/menuHamburgesa.css">
     <title>Joe.Dev</title>
 </head>
 <body>
     <div class="fondo"></div>
+    <button class="panel-btn hamburger hamburger--elastic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
     <header>
         <span>Joe.Dev</span>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="./proyectos.html">Proyectos</a>
-            <a href="./habilidades.html">Habilidades</a>
-            <a href="./contacto.html">Contacto</a>
-        </nav>
+        <aside class="panel">
+            <nav class="menu">
+                <a href="../index.html">Inicio</a>
+                <a href="./Proyectos.html">Proyectos</a>
+                <a href="./habilidades.html">Habilidades</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+        </aside>
     </header>
     <div class="contenido-container">
         <h1>Mis Proyectos</h1>
@@ -38,7 +47,7 @@
         <section class=" proyectos-container ">
 
             <article class="tarjeta-proyecto">
-                <img src="./../assets/proyectoimgref.png" alt="proyecto" class="img-proyecto">
+                <img src="./../assets/pokemon.png" alt="proyecto" class="img-proyecto">
                 <h2>Virtual Pokedex</h2>
                 <p>Esta es una aplicacion que te proporciona informacion sobre los pokemon que mas te gusten. esta hecha con Html, Css y JS con ajax trayendo los datos mediante ajax de la API Rest de <a href="https://pokeapi.co/" target="_blank">poke.api</a></p>
                 <div class="btn-repo-demo">
@@ -50,6 +59,7 @@
         </section>
     </div>
     <script src="../app/proyectos.js"></script>
+    <script src="../app/menuHamburguesa.js"></script>
     <footer class="footer">sitio diseñado y programado por Joe.Dev</footer>
 </body>
 </html>

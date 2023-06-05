@@ -6,6 +6,12 @@
     box-sizing: border-box;
 
 }
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
 /* background */
 .fondo {
     width: 100vw;
@@ -59,6 +65,7 @@ header nav a {
 header nav a:hover {
     color: #5aa7ff;
 }
+
 
 /* div contenido */
 
@@ -188,4 +195,48 @@ footer {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+
+  @media (max-width: 600px){
+
+      
+    .contenido-container{
+        flex-direction: column-reverse;
+    }
+        
+        .contenido-container section{
+        height: 50%;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .contenido-container section div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenido-container section p{
+        font-size: 15px;
+    }
+
+    .contenido-container aside{
+        width: 100vw;
+        height: 50%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenido-container aside img{
+        width: 70%;
+    }
+
+
+
+/* menu hamburguesa */
+
+
+
   }

@@ -112,3 +112,52 @@
         height: 120px;
         }
   }
+
+  @media (max-width: 600px){
+    .all-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todo-container{
+        flex-direction: column;
+        height: 83vh;
+    }
+
+
+    .todo-container .icons-container{
+        width: 100%;
+        height: 45%;
+        margin: 0;
+    }
+
+    .todo-container .icons-container img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .todo-container .explicacion-container {
+        width: 100%;
+        height: 55%;
+        backdrop-filter: blur(0px);
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        
+    }
+
+    .todo-container .explicacion-container .explicacion{
+        width: 400px;
+        padding: 0;
+    }
+
+    .todo-container .explicacion-container .explicacion p {
+        width: 90%;
+    }
+
+    .todo-container .explicacion-container .explicacion .title img {
+        height: 50px;
+    }
+
+
+  }

@@ -150,3 +150,28 @@
     }
 }
 
+@media (max-width: 600px) {
+
+    .contacto-titulo{
+        padding-top: 10px;
+    }
+
+    .contacto-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contacto-container article {
+        width: 90%;
+        height: 40%;
+    }
+
+    .contacto-container .tarjetas-contacto .contacto-tarjeta{
+        height: 70px;
+    }
+
+    .contacto-container .tarjetas-contacto .contacto-tarjeta img{
+        height: 50px;
+    }
+}
+
