@@ -136,11 +136,12 @@
     }
 
     .todo-container .icons-container img{
-        width: 80px;
-        height: 80px;
+        width: 20%;
+        height: 20%;
     }
 
     .todo-container .explicacion-container {
+        justify-content: center;
         width: 100%;
         height: 55%;
         backdrop-filter: blur(0px);
